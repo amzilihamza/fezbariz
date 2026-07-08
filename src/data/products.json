@@ -1,0 +1,204 @@
+[
+  {
+    "slug": "jellaba-homme-laine",
+    "category": "jellabas",
+    "name": { "fr": "Jellaba Homme en Laine", "en": "Men's Wool Jellaba" },
+    "shortDescription": {
+      "fr": "Jellaba traditionnelle en laine tissée à la main, idéale pour l'hiver.",
+      "en": "Traditional jellaba in hand-woven wool, perfect for winter."
+    },
+    "description": {
+      "fr": "Cette jellaba pour homme est confectionnée à partir de laine tissée à la main par des artisans de la région du Moyen Atlas. Coupe ample et confortable, capuche pointue traditionnelle et boutons brandebourgs cousus main.",
+      "en": "This men's jellaba is made from hand-woven wool by artisans from the Middle Atlas region. Loose, comfortable cut, traditional pointed hood and hand-sewn brandebourg buttons."
+    },
+    "materials": { "fr": "100% laine", "en": "100% wool" },
+    "care": {
+      "fr": "Nettoyage à sec recommandé.",
+      "en": "Dry clean recommended."
+    },
+    "price": 890,
+    "currency": "MAD",
+    "images": [
+      "/images/placeholders/jellaba-homme-laine-1.svg",
+      "/images/placeholders/jellaba-homme-laine-2.svg"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Beige", "Gris", "Marron"],
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "slug": "jellaba-femme-brodee",
+    "category": "jellabas",
+    "name": { "fr": "Jellaba Femme Brodée", "en": "Women's Embroidered Jellaba" },
+    "shortDescription": {
+      "fr": "Jellaba légère avec broderies main sur le col et les manches.",
+      "en": "Lightweight jellaba with hand embroidery on the collar and sleeves."
+    },
+    "description": {
+      "fr": "Une jellaba féminine en coton léger, ornée de broderies traditionnelles réalisées à la main. Parfaite pour les journées douces et les occasions spéciales.",
+      "en": "A feminine jellaba in lightweight cotton, adorned with traditional hand embroidery. Perfect for mild days and special occasions."
+    },
+    "materials": { "fr": "100% coton", "en": "100% cotton" },
+    "care": {
+      "fr": "Lavage à la main, à l'eau froide.",
+      "en": "Hand wash in cold water."
+    },
+    "price": 750,
+    "currency": "MAD",
+    "images": [
+      "/images/placeholders/jellaba-femme-brodee-1.svg",
+      "/images/placeholders/jellaba-femme-brodee-2.svg"
+    ],
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": ["Blanc", "Rose poudré", "Vert sauge"],
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "slug": "jellaba-enfant",
+    "category": "jellabas",
+    "name": { "fr": "Jellaba Enfant", "en": "Children's Jellaba" },
+    "shortDescription": {
+      "fr": "Jellaba confortable pour enfant, coupe simple et douce.",
+      "en": "Comfortable children's jellaba, simple and soft cut."
+    },
+    "description": {
+      "fr": "Une jellaba pensée pour les enfants, en coton doux et résistant, idéale pour les fêtes en famille et le quotidien.",
+      "en": "A jellaba designed for children, in soft and durable cotton, perfect for family celebrations and everyday wear."
+    },
+    "materials": { "fr": "100% coton", "en": "100% cotton" },
+    "care": { "fr": "Lavable en machine à 30°C.", "en": "Machine washable at 30°C." },
+    "price": 420,
+    "currency": "MAD",
+    "images": [
+      "/images/placeholders/jellaba-enfant-1.svg",
+      "/images/placeholders/jellaba-enfant-2.svg"
+    ],
+    "sizes": ["4 ans", "6 ans", "8 ans", "10 ans", "12 ans"],
+    "colors": ["Bleu ciel", "Beige"],
+    "inStock": true
+  },
+  {
+    "slug": "jabador-classique",
+    "category": "jabadors",
+    "name": { "fr": "Jabador Classique", "en": "Classic Jabador" },
+    "shortDescription": {
+      "fr": "Ensemble jabador deux pièces, coupe intemporelle.",
+      "en": "Two-piece jabador set, timeless cut."
+    },
+    "description": {
+      "fr": "Ce jabador se compose d'une tunique et d'un pantalon assorti, confectionnés dans un tissu fluide. Une pièce incontournable pour les grandes occasions.",
+      "en": "This jabador consists of a tunic and matching trousers, made from flowing fabric. An essential piece for special occasions."
+    },
+    "materials": { "fr": "Coton et viscose", "en": "Cotton and viscose blend" },
+    "care": { "fr": "Nettoyage à sec recommandé.", "en": "Dry clean recommended." },
+    "price": 680,
+    "currency": "MAD",
+    "images": [
+      "/images/placeholders/jabador-classique-1.svg",
+      "/images/placeholders/jabador-classique-2.svg"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Blanc cassé", "Gris perle"],
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "slug": "jabador-lin",
+    "category": "jabadors",
+    "name": { "fr": "Jabador en Lin", "en": "Linen Jabador" },
+    "shortDescription": {
+      "fr": "Jabador léger en lin, idéal pour l'été.",
+      "en": "Lightweight linen jabador, perfect for summer."
+    },
+    "description": {
+      "fr": "Confectionné en lin naturel, ce jabador offre une grande respirabilité tout en conservant une allure élégante et sobre.",
+      "en": "Made from natural linen, this jabador offers great breathability while maintaining an elegant, understated look."
+    },
+    "materials": { "fr": "100% lin", "en": "100% linen" },
+    "care": { "fr": "Lavage à la main.", "en": "Hand wash only." },
+    "price": 590,
+    "currency": "MAD",
+    "images": [
+      "/images/placeholders/jabador-lin-1.svg",
+      "/images/placeholders/jabador-lin-2.svg"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Écru", "Sable"],
+    "inStock": false
+  },
+  {
+    "slug": "caftan-soiree-brode",
+    "category": "caftans",
+    "name": { "fr": "Caftan de Soirée Brodé", "en": "Embroidered Evening Caftan" },
+    "shortDescription": {
+      "fr": "Caftan raffiné avec broderies dorées, pour les grandes occasions.",
+      "en": "Refined caftan with gold embroidery, for special occasions."
+    },
+    "description": {
+      "fr": "Ce caftan de soirée est orné de broderies dorées réalisées à la main et rehaussé d'une ceinture assortie. Une pièce d'exception pour les mariages et cérémonies.",
+      "en": "This evening caftan is adorned with hand-made gold embroidery and enhanced with a matching belt. An exceptional piece for weddings and ceremonies."
+    },
+    "materials": { "fr": "Satin et fils dorés", "en": "Satin with gold thread" },
+    "care": { "fr": "Nettoyage à sec uniquement.", "en": "Dry clean only." },
+    "price": 1450,
+    "currency": "MAD",
+    "images": [
+      "/images/placeholders/caftan-soiree-brode-1.svg",
+      "/images/placeholders/caftan-soiree-brode-2.svg"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Bordeaux", "Émeraude", "Noir"],
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "slug": "caftan-takchita",
+    "category": "caftans",
+    "name": { "fr": "Takchita Deux Pièces", "en": "Two-Piece Takchita" },
+    "shortDescription": {
+      "fr": "Takchita traditionnelle composée d'une robe intérieure et d'un caftan extérieur.",
+      "en": "Traditional takchita made of an inner dress and outer caftan."
+    },
+    "description": {
+      "fr": "La takchita se compose de deux pièces superposées, maintenues par une ceinture brodée (mdamma). Un habit de cérémonie emblématique du Maroc.",
+      "en": "The takchita consists of two layered pieces, held by an embroidered belt (mdamma). An iconic Moroccan ceremonial garment."
+    },
+    "materials": { "fr": "Soie et broderies sfifa", "en": "Silk with sfifa embroidery" },
+    "care": { "fr": "Nettoyage à sec uniquement.", "en": "Dry clean only." },
+    "price": 2200,
+    "currency": "MAD",
+    "images": [
+      "/images/placeholders/caftan-takchita-1.svg",
+      "/images/placeholders/caftan-takchita-2.svg"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["Ivoire", "Rose poudré", "Bleu nuit"],
+    "inStock": true
+  },
+  {
+    "slug": "caftan-simple",
+    "category": "caftans",
+    "name": { "fr": "Caftan Simple du Quotidien", "en": "Everyday Simple Caftan" },
+    "shortDescription": {
+      "fr": "Caftan sobre et confortable pour un usage quotidien.",
+      "en": "Understated, comfortable caftan for everyday wear."
+    },
+    "description": {
+      "fr": "Un caftan aux lignes épurées, sans fioritures, parfait pour un usage quotidien à la maison ou en visite.",
+      "en": "A caftan with clean lines and no frills, perfect for everyday wear at home or visiting."
+    },
+    "materials": { "fr": "Coton mélangé", "en": "Cotton blend" },
+    "care": { "fr": "Lavable en machine à 30°C.", "en": "Machine washable at 30°C." },
+    "price": 480,
+    "currency": "MAD",
+    "images": [
+      "/images/placeholders/caftan-simple-1.svg",
+      "/images/placeholders/caftan-simple-2.svg"
+    ],
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Terracotta", "Vert olive"],
+    "inStock": true
+  }
+]

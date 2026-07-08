@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "title": "Fez & Bariz — Moroccan Handmade Clothing",
+    "description": "Jellabas, jabadors and caftans handmade by Moroccan artisans. Shipping in Morocco and worldwide."
+  },
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "about": "Our story",
+    "contact": "Contact",
+    "cart": "Cart",
+    "jellabas": "Jellabas",
+    "jabadors": "Jabadors",
+    "caftans": "Caftans"
+  },
+  "home": {
+    "heroTitle": "Moroccan craftsmanship, worn with pride",
+    "heroSubtitle": "Jellabas, jabadors and caftans handmade by Moroccan artisans, for you and your family.",
+    "heroCta": "Shop the collection",
+    "featuredTitle": "Featured pieces",
+    "categoriesTitle": "Shop by category",
+    "storyTitle": "A craft passed down through generations",
+    "storyText": "Every piece is handmade by Moroccan artisans using traditional techniques: embroidery, weaving and time-honoured finishing. By choosing Fez & Bariz, you directly support these artisans and help keep a unique heritage alive.",
+    "storyCta": "Learn more"
+  },
+  "shop": {
+    "title": "Shop all",
+    "allCategories": "All categories",
+    "empty": "No products match this selection yet.",
+    "addToCart": "Add to cart",
+    "outOfStock": "Out of stock",
+    "sizeLabel": "Size",
+    "colorLabel": "Color",
+    "priceFrom": "from"
+  },
+  "product": {
+    "materials": "Materials",
+    "care": "Care instructions",
+    "details": "Details",
+    "quantity": "Quantity",
+    "addToCart": "Add to cart",
+    "backToShop": "Back to shop"
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty.",
+    "continueShopping": "Continue shopping",
+    "subtotal": "Subtotal",
+    "checkout": "Checkout",
+    "remove": "Remove",
+    "size": "Size"
+  },
+  "checkout": {
+    "successTitle": "Thank you for your order!",
+    "successText": "Your order has been confirmed. You'll receive a confirmation email shortly.",
+    "cancelTitle": "Order cancelled",
+    "cancelText": "Your order was not completed. Your cart has been kept.",
+    "backHome": "Back to home"
+  },
+  "about": {
+    "title": "Our story",
+    "intro": "Fez & Bariz was born from a passion for Moroccan textile craftsmanship and a desire to share it beyond borders.",
+    "missionTitle": "Our mission",
+    "missionText": "We work directly with artisans and cooperatives in Morocco to offer authentic pieces, handmade following traditional methods, while ensuring fair compensation.",
+    "qualityTitle": "Quality and authenticity",
+    "qualityText": "Every jellaba, jabador and caftan is made from carefully selected materials using artisanal techniques passed down through generations."
+  },
+  "contact": {
+    "title": "Get in touch",
+    "intro": "A question about a product, an order, or a custom request? Write to us, we'll get back to you quickly.",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "messageLabel": "Message",
+    "submit": "Send",
+    "or": "or reach us directly"
+  },
+  "footer": {
+    "tagline": "Handmade Moroccan artisanal clothing.",
+    "shop": "Shop",
+    "about": "About",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "metadata": {
+    "title": "Fez & Bariz — Vêtements artisanaux marocains",
+    "description": "Jellabas, jabadors et caftans faits main par des artisans marocains. Livraison au Maroc et à l'international."
+  },
+  "nav": {
+    "home": "Accueil",
+    "shop": "Boutique",
+    "about": "Notre histoire",
+    "contact": "Contact",
+    "cart": "Panier",
+    "jellabas": "Jellabas",
+    "jabadors": "Jabadors",
+    "caftans": "Caftans"
+  },
+  "home": {
+    "heroTitle": "L'artisanat marocain, porté avec fierté",
+    "heroSubtitle": "Des jellabas, jabadors et caftans confectionnés à la main par des artisans du Maroc, pour vous et votre famille.",
+    "heroCta": "Découvrir la boutique",
+    "featuredTitle": "Nos pièces phares",
+    "categoriesTitle": "Explorer par catégorie",
+    "storyTitle": "Un savoir-faire transmis de génération en génération",
+    "storyText": "Chaque pièce est confectionnée à la main par des artisans marocains selon des techniques ancestrales : broderie, tissage et finitions traditionnelles. En choisissant Fez & Bariz, vous soutenez directement ces artisans et perpétuez un patrimoine unique.",
+    "storyCta": "En savoir plus"
+  },
+  "shop": {
+    "title": "Notre boutique",
+    "allCategories": "Toutes les catégories",
+    "empty": "Aucun produit ne correspond à cette sélection pour le moment.",
+    "addToCart": "Ajouter au panier",
+    "outOfStock": "Rupture de stock",
+    "sizeLabel": "Taille",
+    "colorLabel": "Couleur",
+    "priceFrom": "à partir de"
+  },
+  "product": {
+    "materials": "Matières",
+    "care": "Entretien",
+    "details": "Détails",
+    "quantity": "Quantité",
+    "addToCart": "Ajouter au panier",
+    "backToShop": "Retour à la boutique"
+  },
+  "cart": {
+    "title": "Votre panier",
+    "empty": "Votre panier est vide.",
+    "continueShopping": "Continuer mes achats",
+    "subtotal": "Sous-total",
+    "checkout": "Passer la commande",
+    "remove": "Retirer",
+    "size": "Taille"
+  },
+  "checkout": {
+    "successTitle": "Merci pour votre commande !",
+    "successText": "Votre commande a été confirmée. Vous recevrez un e-mail de confirmation sous peu.",
+    "cancelTitle": "Commande annulée",
+    "cancelText": "Votre commande n'a pas abouti. Votre panier a été conservé.",
+    "backHome": "Retour à l'accueil"
+  },
+  "about": {
+    "title": "Notre histoire",
+    "intro": "Fez & Bariz est né d'une passion pour l'artisanat textile marocain et de la volonté de le faire rayonner au-delà des frontières.",
+    "missionTitle": "Notre mission",
+    "missionText": "Nous travaillons directement avec des artisans et coopératives au Maroc pour proposer des pièces authentiques, confectionnées dans le respect des traditions, tout en garantissant une rémunération juste.",
+    "qualityTitle": "Qualité et authenticité",
+    "qualityText": "Chaque jellaba, jabador et caftan est réalisé à partir de matières premières sélectionnées avec soin et selon des techniques artisanales transmises depuis des générations."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "intro": "Une question sur un produit, une commande ou une demande sur-mesure ? Écrivez-nous, nous vous répondrons rapidement.",
+    "nameLabel": "Nom",
+    "emailLabel": "E-mail",
+    "messageLabel": "Message",
+    "submit": "Envoyer",
+    "or": "ou contactez-nous directement"
+  },
+  "footer": {
+    "tagline": "Vêtements artisanaux marocains, faits main.",
+    "shop": "Boutique",
+    "about": "À propos",
+    "contact": "Contact",
+    "rights": "Tous droits réservés."
+  }
+}
