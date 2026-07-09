@@ -3,6 +3,37 @@ import { Link } from "@/i18n/navigation";
 import { ProductCard } from "@/components/ProductCard";
 import { categories, getProductsByCategory } from "@/lib/products";
 import type { Category } from "@/types/product";
+import { localizedUrls } from "@/lib/site";
+
+export async function generateMetadata({
+  params,
+  searchParams,
+}: {
+  params: Promise<{ locale: "fr" | "en" }>;
+  searchParams: Promise<{ categorie?: string }>;
+}) {
+  const { locale } = await params;
+  const { categorie } = await searchParams;
+  const t = await getTranslations({ locale, namespace: "shop" });
+  const tNav = await getTranslations({ locale, namespace: "nav" });
+
+  const activeCategory =
+    categorie && categories.includes(categorie as Category) ? (categorie as Category) : null;
+
+  const title = activeCategory ? tNav(activeCategory) : t("title");
+  const { languages, canonicalFor } = localizedUrls("/produits");
+  const canonical = activeCategory
+    ? `${canonicalFor(locale)}?categorie=${activeCategory}`
+    : canonicalFor(locale);
+
+  return {
+    title,
+    alternates: {
+      canonical,
+      languages: activeCategory ? undefined : languages,
+    },
+  };
+}
 
 export default async function ShopPage({
   params,

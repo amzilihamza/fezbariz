@@ -1,5 +1,21 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ContactForm } from "@/components/ContactForm";
+import { localizedUrls } from "@/lib/site";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: "fr" | "en" }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "contact" });
+  const { languages, canonicalFor } = localizedUrls("/contact");
+  return {
+    title: t("title"),
+    description: t("intro"),
+    alternates: { canonical: canonicalFor(locale), languages },
+  };
+}
 
 export default async function ContactPage({
   params,

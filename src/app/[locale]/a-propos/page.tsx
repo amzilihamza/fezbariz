@@ -1,5 +1,21 @@
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { localizedUrls } from "@/lib/site";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: "fr" | "en" }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "about" });
+  const { languages, canonicalFor } = localizedUrls("/a-propos");
+  return {
+    title: t("title"),
+    description: t("intro"),
+    alternates: { canonical: canonicalFor(locale), languages },
+  };
+}
 
 export default async function AboutPage({
   params,

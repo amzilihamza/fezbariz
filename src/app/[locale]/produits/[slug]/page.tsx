@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { AddToCartForm } from "@/components/AddToCartForm";
 import { getAllProducts, getProductBySlug } from "@/lib/products";
 import { formatPrice } from "@/lib/format";
+import { ogLocale, siteUrl, localizedUrls } from "@/lib/site";
 
 export function generateStaticParams() {
   return getAllProducts().map((product) => ({ slug: product.slug }));
@@ -18,9 +19,30 @@ export async function generateMetadata({
   const { locale, slug } = await params;
   const product = getProductBySlug(slug);
   if (!product) return {};
+
+  const { languages, canonicalFor } = localizedUrls(`/produits/${slug}`);
+
   return {
     title: product.name[locale],
     description: product.shortDescription[locale],
+    alternates: {
+      canonical: canonicalFor(locale),
+      languages,
+    },
+    openGraph: {
+      type: "website",
+      title: product.name[locale],
+      description: product.shortDescription[locale],
+      url: canonicalFor(locale),
+      locale: ogLocale(locale),
+      images: [product.images[0]],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: product.name[locale],
+      description: product.shortDescription[locale],
+      images: [product.images[0]],
+    },
   };
 }
 
@@ -36,8 +58,32 @@ export default async function ProductPage({
 
   const t = await getTranslations("product");
 
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name[locale],
+    description: product.description[locale],
+    image: product.images.map((image) => `${siteUrl}${image}`),
+    sku: product.slug,
+    category: product.category,
+    material: product.materials[locale],
+    offers: {
+      "@type": "Offer",
+      url: localizedUrls(`/produits/${slug}`).canonicalFor(locale),
+      priceCurrency: product.currency,
+      price: product.price,
+      availability: product.inStock
+        ? "https://schema.org/InStock"
+        : "https://schema.org/OutOfStock",
+    },
+  };
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
       <Link href="/produits" className="text-sm text-charcoal/60 hover:text-terracotta">
         ← {t("backToShop")}
       </Link>

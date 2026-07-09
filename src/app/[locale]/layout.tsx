@@ -9,6 +9,7 @@ import { CartProvider } from "@/lib/cart-context";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CartDrawer } from "@/components/CartDrawer";
+import { ogLocale, siteName, siteUrl, localizedUrls } from "@/lib/site";
 import "../globals.css";
 
 const inter = Inter({
@@ -32,9 +33,31 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "metadata" });
+  const { languages, canonicalFor } = localizedUrls("");
+
   return {
-    title: t("title"),
+    metadataBase: new URL(siteUrl),
+    title: { default: t("title"), template: `%s | ${siteName}` },
     description: t("description"),
+    alternates: {
+      canonical: canonicalFor(locale),
+      languages,
+    },
+    openGraph: {
+      type: "website",
+      siteName,
+      title: t("title"),
+      description: t("description"),
+      url: canonicalFor(locale),
+      locale: ogLocale(locale),
+      images: ["/images/placeholders/hero.svg"],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: ["/images/placeholders/hero.svg"],
+    },
   };
 }
 
@@ -52,12 +75,26 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
   const messages = await getMessages();
 
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ClothingStore",
+    name: siteName,
+    url: siteUrl,
+    logo: `${siteUrl}/images/placeholders/hero.svg`,
+    areaServed: "MA",
+    sameAs: [],
+  };
+
   return (
     <html
       lang={locale}
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground font-sans">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <NextIntlClientProvider messages={messages}>
           <CartProvider>
             <Header />
