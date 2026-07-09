@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
+import { families } from "@/lib/products";
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { CartButton } from "./CartButton";
 
@@ -13,7 +14,11 @@ export function Header() {
 
   const links = [
     { href: "/", label: t("home") },
-    { href: "/produits", label: t("shop") },
+    ...families.map((famille) => ({
+      href: `/produits/${famille}`,
+      label: t(famille),
+    })),
+    { href: "/avis", label: t("reviews") },
     { href: "/a-propos", label: t("about") },
     { href: "/contact", label: t("contact") },
   ];
@@ -25,7 +30,7 @@ export function Header() {
           Fezbariz
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-6 lg:flex">
           {links.map((link) => (
             <Link
               key={link.href}
@@ -43,7 +48,7 @@ export function Header() {
           </div>
           <CartButton />
           <button
-            className="p-2 md:hidden"
+            className="p-2 lg:hidden"
             aria-label="Menu"
             onClick={() => setMenuOpen((v) => !v)}
           >
@@ -53,7 +58,7 @@ export function Header() {
       </div>
 
       {menuOpen && (
-        <nav className="flex flex-col gap-1 border-t border-sand-dark bg-sand px-4 py-3 md:hidden">
+        <nav className="flex flex-col gap-1 border-t border-sand-dark bg-sand px-4 py-3 lg:hidden">
           {links.map((link) => (
             <Link
               key={link.href}

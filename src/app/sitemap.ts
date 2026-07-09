@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
-import { getAllProducts } from "@/lib/products";
+import { getAllProducts, families } from "@/lib/products";
 import { siteUrl } from "@/lib/site";
 
 function urlFor(pathname: string, locale: string) {
@@ -15,9 +15,12 @@ function alternatesFor(pathname: string) {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPaths = ["", "/produits", "/a-propos", "/contact"];
-  const productPaths = getAllProducts().map((product) => `/produits/${product.slug}`);
-  const paths = [...staticPaths, ...productPaths];
+  const staticPaths = ["", "/produits", "/a-propos", "/avis", "/contact"];
+  const familyPaths = families.map((famille) => `/produits/${famille}`);
+  const productPaths = getAllProducts().map(
+    (product) => `/produits/${product.family}/${product.slug}`
+  );
+  const paths = [...staticPaths, ...familyPaths, ...productPaths];
 
   const entries: MetadataRoute.Sitemap = [];
   for (const path of paths) {

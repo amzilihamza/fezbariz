@@ -1,8 +1,10 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
+import { families } from "@/lib/products";
 
 export function Footer() {
   const t = useTranslations("footer");
+  const tNav = useTranslations("nav");
   const year = new Date().getFullYear();
 
   return (
@@ -17,11 +19,16 @@ export function Footer() {
           <div>
             <p className="text-sm font-semibold text-charcoal">{t("shop")}</p>
             <ul className="mt-3 space-y-2 text-sm text-charcoal/70">
-              <li>
-                <Link href="/produits" className="hover:text-terracotta">
-                  {t("shop")}
-                </Link>
-              </li>
+              {families.map((famille) => (
+                <li key={famille}>
+                  <Link
+                    href={`/produits/${famille}`}
+                    className="hover:text-terracotta"
+                  >
+                    {tNav(famille)}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
@@ -30,6 +37,11 @@ export function Footer() {
               <li>
                 <Link href="/a-propos" className="hover:text-terracotta">
                   {t("about")}
+                </Link>
+              </li>
+              <li>
+                <Link href="/avis" className="hover:text-terracotta">
+                  {t("reviews")}
                 </Link>
               </li>
               <li>

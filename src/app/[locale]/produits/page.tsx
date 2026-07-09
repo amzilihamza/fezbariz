@@ -1,99 +1,64 @@
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { ProductCard } from "@/components/ProductCard";
-import { categories, getProductsByCategory } from "@/lib/products";
-import type { Category } from "@/types/product";
+import { families } from "@/lib/products";
 import { localizedUrls } from "@/lib/site";
+
+const familyImages: Record<string, string> = {
+  homme: "/images/products/gandoura-vert-porte.jpg",
+  femme: "/images/products/caftan-blanc-creme-1.jpg",
+  enfant: "/images/products/jabador-dore-1.jpg",
+};
 
 export async function generateMetadata({
   params,
-  searchParams,
 }: {
   params: Promise<{ locale: "fr" | "en" }>;
-  searchParams: Promise<{ categorie?: string }>;
 }) {
   const { locale } = await params;
-  const { categorie } = await searchParams;
   const t = await getTranslations({ locale, namespace: "shop" });
-  const tNav = await getTranslations({ locale, namespace: "nav" });
-
-  const activeCategory =
-    categorie && categories.includes(categorie as Category) ? (categorie as Category) : null;
-
-  const title = activeCategory ? tNav(activeCategory) : t("title");
   const { languages, canonicalFor } = localizedUrls("/produits");
-  const canonical = activeCategory
-    ? `${canonicalFor(locale)}?categorie=${activeCategory}`
-    : canonicalFor(locale);
-
   return {
-    title,
-    alternates: {
-      canonical,
-      languages: activeCategory ? undefined : languages,
-    },
+    title: t("title"),
+    alternates: { canonical: canonicalFor(locale), languages },
   };
 }
 
-export default async function ShopPage({
+export default async function ShopHubPage({
   params,
-  searchParams,
 }: {
   params: Promise<{ locale: "fr" | "en" }>;
-  searchParams: Promise<{ categorie?: string }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const { categorie } = await searchParams;
   const t = await getTranslations("shop");
   const tNav = await getTranslations("nav");
-
-  const activeCategory =
-    categorie && categories.includes(categorie as Category)
-      ? (categorie as Category)
-      : "all";
-
-  const products = getProductsByCategory(activeCategory);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <h1 className="font-display text-3xl text-charcoal">{t("title")}</h1>
+      <p className="mt-3 max-w-xl text-charcoal/70">{t("hubIntro")}</p>
 
-      <div className="mt-6 flex flex-wrap gap-2">
-        <Link
-          href={{ pathname: "/produits" }}
-          className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-colors ${
-            activeCategory === "all"
-              ? "border-terracotta bg-terracotta text-white"
-              : "border-sand-dark text-charcoal/70 hover:border-terracotta hover:text-terracotta"
-          }`}
-        >
-          {t("allCategories")}
-        </Link>
-        {categories.map((category) => (
+      <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-3">
+        {families.map((famille) => (
           <Link
-            key={category}
-            href={{ pathname: "/produits", query: { categorie: category } }}
-            className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-colors ${
-              activeCategory === category
-                ? "border-terracotta bg-terracotta text-white"
-                : "border-sand-dark text-charcoal/70 hover:border-terracotta hover:text-terracotta"
-            }`}
+            key={famille}
+            href={`/produits/${famille}`}
+            className="group relative aspect-[3/4] overflow-hidden rounded-xl"
           >
-            {tNav(category)}
+            <Image
+              src={familyImages[famille]}
+              alt={tNav(famille)}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              sizes="(min-width: 640px) 33vw, 100vw"
+            />
+            <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 via-black/10 to-transparent p-5">
+              <span className="font-display text-2xl text-white">{tNav(famille)}</span>
+            </div>
           </Link>
         ))}
       </div>
-
-      {products.length === 0 ? (
-        <p className="mt-16 text-center text-charcoal/60">{t("empty")}</p>
-      ) : (
-        <div className="mt-8 grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4">
-          {products.map((product) => (
-            <ProductCard key={product.slug} product={product} />
-          ))}
-        </div>
-      )}
     </div>
   );
 }

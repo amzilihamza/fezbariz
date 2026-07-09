@@ -1,29 +1,43 @@
 {
   "metadata": {
     "title": "Fezbariz — The House of Elegance Between Fez and Paris",
-    "description": "Handmade Moroccan artisanal gandouras and caftans. Shipping in France and worldwide."
+    "description": "Handmade Moroccan artisanal gandouras, jellabas, caftans and children's jabadors. Shipping in France and worldwide."
   },
   "nav": {
     "home": "Home",
     "shop": "Shop",
     "about": "Our story",
+    "reviews": "Reviews",
     "contact": "Contact",
     "cart": "Cart",
+    "homme": "Men",
+    "femme": "Women",
+    "enfant": "Kids",
     "gandouras": "Gandouras",
-    "caftans": "Caftans"
+    "jellabas": "Jellabas",
+    "caftans": "Caftans",
+    "jabadors": "Jabadors"
   },
   "home": {
     "heroTitle": "Moroccan craftsmanship, worn with pride",
-    "heroSubtitle": "Gandouras and caftans handmade by Moroccan artisans, for you and your family.",
+    "heroSubtitle": "Gandouras, jellabas, caftans and children's jabadors handmade by Moroccan artisans, for the whole family.",
     "heroCta": "Shop the collection",
+    "familiesTitle": "A collection for the whole family",
+    "familiesSubtitle": "Men, women and kids: every piece is chosen for its authenticity and the quality of its finish.",
     "featuredTitle": "Featured pieces",
-    "categoriesTitle": "Shop by category",
+    "journeyTitle": "A journey into the heart of Fez craftsmanship",
+    "journeyText": "Tanning leather, laying zellige tile by tile, tracing calligraphy with a feather quill: these are the gestures passed down through generations of artisans that inspire every piece we make. Fezbariz was born from this attachment to a living craft, between Fez and Paris.",
+    "journeyCta": "Discover our story",
+    "reviewsTitle": "What our first customers are saying",
+    "reviewsSubtitle": "Genuine reviews, collected from our very first sales.",
+    "reviewsCta": "See all reviews",
     "storyTitle": "A craft passed down through generations",
     "storyText": "Every piece is handmade by Moroccan artisans using traditional techniques: embroidery, weaving and time-honoured finishing. By choosing Fezbariz, you directly support these artisans and help keep a unique heritage alive.",
     "storyCta": "Learn more"
   },
   "shop": {
     "title": "Shop all",
+    "hubIntro": "Three collections, one same care for detail: discover pieces for men, women and kids.",
     "allCategories": "All categories",
     "empty": "No products match this selection yet.",
     "addToCart": "Add to cart",
@@ -66,7 +80,15 @@
     "missionTitle": "Our mission",
     "missionText": "We work directly with artisans and cooperatives in Morocco to offer authentic pieces, handmade following traditional methods, while ensuring fair compensation.",
     "qualityTitle": "Quality and authenticity",
-    "qualityText": "Every gandoura and caftan is made with care using artisanal techniques passed down through generations."
+    "qualityText": "Every gandoura, jellaba, caftan and children's jabador is made with care using artisanal techniques passed down through generations.",
+    "craftTitle": "Gestures inherited from the medinas",
+    "craftText": "In Fez, leather tanning, zellige tiling and calligraphy are still passed down from master to apprentice. It's this same artisanal rigor we look for in every embroidery, every finish of our gandouras, jellabas, caftans and jabadors."
+  },
+  "reviews": {
+    "title": "Customer reviews",
+    "intro": "Our very first sales happened on Vinted. Here, unfiltered, is what our first customers had to say.",
+    "source": "Verified reviews on Vinted",
+    "cta": "Shop the collection"
   },
   "contact": {
     "title": "Get in touch",
@@ -81,6 +103,7 @@
     "tagline": "The house of elegance between Fez and Paris.",
     "shop": "Shop",
     "about": "About",
+    "reviews": "Reviews",
     "contact": "Contact",
     "rights": "All rights reserved."
   }

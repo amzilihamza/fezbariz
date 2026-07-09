@@ -1,4 +1,6 @@
-export type Category = "gandouras" | "caftans";
+export type Family = "homme" | "femme" | "enfant";
+
+export type Category = "gandouras" | "jellabas" | "caftans" | "jabadors";
 
 export type LocalizedText = {
   fr: string;
@@ -7,6 +9,7 @@ export type LocalizedText = {
 
 export type Product = {
   slug: string;
+  family: Family;
   category: Category;
   name: LocalizedText;
   shortDescription: LocalizedText;
@@ -21,4 +24,10 @@ export type Product = {
   sizes: string[];
   inStock: boolean;
   featured?: boolean;
+};
+
+export const familyCategories: Record<Family, Category[]> = {
+  homme: ["gandouras", "jellabas"],
+  femme: ["caftans"],
+  enfant: ["jabadors"],
 };

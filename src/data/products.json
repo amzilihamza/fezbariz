@@ -1,6 +1,7 @@
 [
   {
     "slug": "gandoura-blanc",
+    "family": "homme",
     "category": "gandouras",
     "name": { "fr": "Gandoura Blanc Ivoire", "en": "Ivory White Gandoura" },
     "color": { "fr": "Blanc ivoire", "en": "Ivory white" },
@@ -14,7 +15,7 @@
     },
     "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
     "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
-    "price": null,
+    "price": 39,
     "currency": "EUR",
     "images": [
       "/images/products/gandoura-blanc-porte.jpg",
@@ -27,6 +28,7 @@
   },
   {
     "slug": "gandoura-bordeaux",
+    "family": "homme",
     "category": "gandouras",
     "name": { "fr": "Gandoura Bordeaux", "en": "Burgundy Gandoura" },
     "color": { "fr": "Bordeaux", "en": "Burgundy" },
@@ -40,7 +42,7 @@
     },
     "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
     "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
-    "price": null,
+    "price": 39,
     "currency": "EUR",
     "images": [
       "/images/products/gandoura-bordeaux-porte.jpg",
@@ -53,6 +55,7 @@
   },
   {
     "slug": "gandoura-vert",
+    "family": "homme",
     "category": "gandouras",
     "name": { "fr": "Gandoura Vert Sapin", "en": "Forest Green Gandoura" },
     "color": { "fr": "Vert sapin", "en": "Forest green" },
@@ -66,7 +69,7 @@
     },
     "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
     "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
-    "price": null,
+    "price": 39,
     "currency": "EUR",
     "images": [
       "/images/products/gandoura-vert-porte.jpg",
@@ -79,6 +82,7 @@
   },
   {
     "slug": "gandoura-noir",
+    "family": "homme",
     "category": "gandouras",
     "name": { "fr": "Gandoura Noir", "en": "Black Gandoura" },
     "color": { "fr": "Noir", "en": "Black" },
@@ -92,7 +96,7 @@
     },
     "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
     "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
-    "price": null,
+    "price": 39,
     "currency": "EUR",
     "images": ["/images/products/gandoura-noir-fond.jpg"],
     "sizes": ["S", "M", "L", "XL", "XXL"],
@@ -100,7 +104,62 @@
     "featured": false
   },
   {
+    "slug": "gandoura-bleu-marine",
+    "family": "homme",
+    "category": "gandouras",
+    "name": { "fr": "Gandoura Bleu Marine", "en": "Navy Blue Gandoura" },
+    "color": { "fr": "Bleu marine", "en": "Navy blue" },
+    "shortDescription": {
+      "fr": "Gandoura homme manches courtes, col brodé ton sur ton.",
+      "en": "Men's short-sleeve gandoura with tone-on-tone embroidered collar."
+    },
+    "description": {
+      "fr": "Gandoura homme à manches courtes, coupe ample et droite. Col en V brodé ton sur ton avec finitions boutonnées, poignets et poches assortis.",
+      "en": "Men's short-sleeve gandoura, loose straight cut. Tone-on-tone embroidered V-neck collar with button trim, matching cuffs and pockets."
+    },
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": 39,
+    "currency": "EUR",
+    "images": [
+      "/images/products/gandoura-bleu-porte.jpg",
+      "/images/products/gandoura-bleu-fond.jpg"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "slug": "jellaba-ivoire",
+    "family": "homme",
+    "category": "jellabas",
+    "name": { "fr": "Jellaba Ivoire Brodée Or", "en": "Ivory Jellaba with Gold Embroidery" },
+    "color": { "fr": "Ivoire", "en": "Ivory" },
+    "shortDescription": {
+      "fr": "Jellaba homme à capuche, broderies dorées sur le col et le devant.",
+      "en": "Men's hooded jellaba with gold embroidery on the collar and front placket."
+    },
+    "description": {
+      "fr": "Jellaba homme traditionnelle à capuche pointue, manches longues et fermeture zippée. Broderies dorées sur toute la longueur du col et du devant, finitions brodées ton sur ton aux poignets.",
+      "en": "Traditional men's hooded jellaba with a pointed hood, long sleeves and zip closure. Gold embroidery runs the length of the collar and front placket, with tone-on-tone embroidered cuffs."
+    },
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": 69,
+    "currency": "EUR",
+    "images": [
+      "/images/products/jellaba-ivoire-1.jpg",
+      "/images/products/jellaba-ivoire-2.jpg",
+      "/images/products/jellaba-ivoire-detail-1.jpg",
+      "/images/products/jellaba-ivoire-detail-2.jpg"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "inStock": true,
+    "featured": true
+  },
+  {
     "slug": "caftan-bleu-roi",
+    "family": "femme",
     "category": "caftans",
     "name": { "fr": "Caftan Bleu Roi Brodé", "en": "Embroidered Royal Blue Caftan" },
     "color": { "fr": "Bleu roi", "en": "Royal blue" },
@@ -114,7 +173,7 @@
     },
     "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
     "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
-    "price": null,
+    "price": 79,
     "currency": "EUR",
     "images": [
       "/images/products/caftan-bleu-roi-porte.jpg",
@@ -126,6 +185,7 @@
   },
   {
     "slug": "caftan-orange",
+    "family": "femme",
     "category": "caftans",
     "name": { "fr": "Caftan Orange Brodé", "en": "Embroidered Orange Caftan" },
     "color": { "fr": "Orange", "en": "Orange" },
@@ -139,7 +199,7 @@
     },
     "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
     "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
-    "price": null,
+    "price": 79,
     "currency": "EUR",
     "images": [
       "/images/products/caftan-orange-1.jpg",
@@ -151,6 +211,7 @@
   },
   {
     "slug": "caftan-rose",
+    "family": "femme",
     "category": "caftans",
     "name": { "fr": "Caftan Rose Poudré Brodé", "en": "Embroidered Powder Pink Caftan" },
     "color": { "fr": "Rose poudré", "en": "Powder pink" },
@@ -164,7 +225,7 @@
     },
     "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
     "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
-    "price": null,
+    "price": 79,
     "currency": "EUR",
     "images": [
       "/images/products/caftan-rose-1.jpg",
@@ -176,6 +237,7 @@
   },
   {
     "slug": "caftan-turquoise",
+    "family": "femme",
     "category": "caftans",
     "name": { "fr": "Caftan Turquoise Brodé", "en": "Embroidered Turquoise Caftan" },
     "color": { "fr": "Turquoise", "en": "Turquoise" },
@@ -189,11 +251,169 @@
     },
     "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
     "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
-    "price": null,
+    "price": 79,
     "currency": "EUR",
     "images": ["/images/products/caftan-turquoise-1.jpg"],
     "sizes": ["S", "M", "L", "XL", "XXL"],
     "inStock": true,
+    "featured": false
+  },
+  {
+    "slug": "caftan-blanc-creme",
+    "family": "femme",
+    "category": "caftans",
+    "name": { "fr": "Caftan Blanc Crème Brodé", "en": "Embroidered Cream White Caftan" },
+    "color": { "fr": "Blanc crème", "en": "Cream white" },
+    "shortDescription": {
+      "fr": "Caftan femme manches longues, dentelle brodée dorée et ceinture assortie.",
+      "en": "Women's long-sleeve caftan with gold embroidered lace and matching belt."
+    },
+    "description": {
+      "fr": "Caftan femme à manches longues évasées, encolure en V et fente devant. Large bande de dentelle brodée dorée sur l'empiècement, les manches et la bande centrale, ceinture large assortie.",
+      "en": "Women's caftan with long bell sleeves, V-neckline and front slit. Wide gold embroidered lace trim on the yoke, sleeves and central panel, wide matching belt."
+    },
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": 79,
+    "currency": "EUR",
+    "images": [
+      "/images/products/caftan-blanc-creme-1.jpg",
+      "/images/products/caftan-blanc-creme-2.jpg",
+      "/images/products/caftan-blanc-creme-detail.jpg"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "inStock": true,
     "featured": true
+  },
+  {
+    "slug": "caftan-vert-emeraude",
+    "family": "femme",
+    "category": "caftans",
+    "name": { "fr": "Caftan Vert Émeraude Brodé", "en": "Embroidered Emerald Green Caftan" },
+    "color": { "fr": "Vert émeraude", "en": "Emerald green" },
+    "shortDescription": {
+      "fr": "Caftan femme manches longues, broderies ton sur ton perlées et ceinture assortie.",
+      "en": "Women's long-sleeve caftan with beaded tone-on-tone embroidery and matching belt."
+    },
+    "description": {
+      "fr": "Caftan femme à manches longues, encolure en V brodée et perlée ton sur ton, fermeture zippée, ceinture large assortie.",
+      "en": "Women's long-sleeve caftan with a beaded tone-on-tone embroidered V-neckline, zip closure and wide matching belt."
+    },
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": 79,
+    "currency": "EUR",
+    "images": [
+      "/images/products/caftan-vert-1.jpg",
+      "/images/products/caftan-vert-2.jpg",
+      "/images/products/caftan-vert-detail.jpg"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "slug": "jabador-dore",
+    "family": "enfant",
+    "category": "jabadors",
+    "name": { "fr": "Jabador Enfant Doré", "en": "Children's Gold Jabador" },
+    "color": { "fr": "Blanc et doré", "en": "White and gold" },
+    "shortDescription": {
+      "fr": "Ensemble jabador enfant, broderies dorées, tunique et pantalon.",
+      "en": "Children's jabador set with gold embroidery, tunic and trousers."
+    },
+    "description": {
+      "fr": "Ensemble jabador enfant deux pièces : tunique blanche à col brodé doré et pantalon assorti à revers brodés. Fermeture boutonnée, cordon de serrage à la taille.",
+      "en": "Two-piece children's jabador set: white tunic with gold embroidered collar and matching trousers with embroidered cuffs. Button closure, drawstring waist."
+    },
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": 29,
+    "currency": "EUR",
+    "images": [
+      "/images/products/jabador-dore-1.jpg",
+      "/images/products/jabador-dore-2.jpg"
+    ],
+    "sizes": ["2 ans", "4 ans", "6 ans", "8 ans", "10 ans", "12 ans"],
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "slug": "jabador-rouge-bordeaux",
+    "family": "enfant",
+    "category": "jabadors",
+    "name": { "fr": "Jabador Enfant Rouge Bordeaux", "en": "Children's Burgundy Red Jabador" },
+    "color": { "fr": "Blanc et bordeaux", "en": "White and burgundy" },
+    "shortDescription": {
+      "fr": "Ensemble jabador enfant 3 pièces avec cape bordeaux assortie.",
+      "en": "3-piece children's jabador set with matching burgundy cape."
+    },
+    "description": {
+      "fr": "Ensemble jabador enfant trois pièces : tunique blanche à col brodé bordeaux, pantalon assorti et cape bordeaux brodée. Tenue de cérémonie complète pour les grandes occasions.",
+      "en": "Three-piece children's jabador set: white tunic with burgundy embroidered collar, matching trousers and an embroidered burgundy cape. A complete ceremonial outfit for special occasions."
+    },
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": 29,
+    "currency": "EUR",
+    "images": [
+      "/images/products/jabador-rouge-1.jpg",
+      "/images/products/jabador-rouge-2.jpg"
+    ],
+    "sizes": ["2 ans", "4 ans", "6 ans", "8 ans", "10 ans", "12 ans"],
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "slug": "jabador-bleu-roi",
+    "family": "enfant",
+    "category": "jabadors",
+    "name": { "fr": "Jabador Enfant Bleu Roi", "en": "Children's Royal Blue Jabador" },
+    "color": { "fr": "Blanc et bleu roi", "en": "White and royal blue" },
+    "shortDescription": {
+      "fr": "Ensemble jabador enfant 3 pièces avec cape bleu roi assortie.",
+      "en": "3-piece children's jabador set with matching royal blue cape."
+    },
+    "description": {
+      "fr": "Ensemble jabador enfant trois pièces : tunique blanche à col brodé bleu roi, pantalon assorti et cape bleu roi brodée. Tenue de cérémonie complète pour les grandes occasions.",
+      "en": "Three-piece children's jabador set: white tunic with royal blue embroidered collar, matching trousers and an embroidered royal blue cape. A complete ceremonial outfit for special occasions."
+    },
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": 29,
+    "currency": "EUR",
+    "images": [
+      "/images/products/jabador-bleu-1.jpg",
+      "/images/products/jabador-bleu-2.jpg"
+    ],
+    "sizes": ["2 ans", "4 ans", "6 ans", "8 ans", "10 ans", "12 ans"],
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "slug": "jabador-vert",
+    "family": "enfant",
+    "category": "jabadors",
+    "name": { "fr": "Jabador Enfant Vert", "en": "Children's Green Jabador" },
+    "color": { "fr": "Blanc et vert", "en": "White and green" },
+    "shortDescription": {
+      "fr": "Ensemble jabador enfant 3 pièces avec cape verte assortie.",
+      "en": "3-piece children's jabador set with matching green cape."
+    },
+    "description": {
+      "fr": "Ensemble jabador enfant trois pièces : tunique blanche à col brodé vert, pantalon assorti et cape verte brodée. Tenue de cérémonie complète pour les grandes occasions.",
+      "en": "Three-piece children's jabador set: white tunic with green embroidered collar, matching trousers and an embroidered green cape. A complete ceremonial outfit for special occasions."
+    },
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": 29,
+    "currency": "EUR",
+    "images": [
+      "/images/products/jabador-vert-1.jpg",
+      "/images/products/jabador-vert-2.jpg"
+    ],
+    "sizes": ["2 ans", "4 ans", "6 ans", "8 ans", "10 ans", "12 ans"],
+    "inStock": true,
+    "featured": false
   }
 ]

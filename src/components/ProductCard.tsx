@@ -10,7 +10,7 @@ export function ProductCard({ product }: { product: Product }) {
 
   return (
     <Link
-      href={`/produits/${product.slug}`}
+      href={`/produits/${product.family}/${product.slug}`}
       className="group block"
     >
       <div className="relative aspect-[5/6] overflow-hidden rounded-xl bg-sand-dark">

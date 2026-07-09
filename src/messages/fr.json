@@ -1,29 +1,43 @@
 {
   "metadata": {
     "title": "Fezbariz — Maison d'élégance entre Fès et Paris",
-    "description": "Gandouras et caftans artisanaux marocains, confectionnés à la main. Livraison en France et à l'international."
+    "description": "Gandouras, jellabas, caftans et jabadors enfant artisanaux marocains, confectionnés à la main. Livraison en France et à l'international."
   },
   "nav": {
     "home": "Accueil",
     "shop": "Boutique",
     "about": "Notre histoire",
+    "reviews": "Avis",
     "contact": "Contact",
     "cart": "Panier",
+    "homme": "Homme",
+    "femme": "Femme",
+    "enfant": "Enfant",
     "gandouras": "Gandouras",
-    "caftans": "Caftans"
+    "jellabas": "Jellabas",
+    "caftans": "Caftans",
+    "jabadors": "Jabadors"
   },
   "home": {
     "heroTitle": "L'artisanat marocain, porté avec fierté",
-    "heroSubtitle": "Des gandouras et caftans confectionnés à la main par des artisans du Maroc, pour vous et votre famille.",
+    "heroSubtitle": "Gandouras, jellabas, caftans et jabadors enfant confectionnés à la main par des artisans du Maroc, pour toute la famille.",
     "heroCta": "Découvrir la boutique",
+    "familiesTitle": "Une collection pour toute la famille",
+    "familiesSubtitle": "Homme, femme et enfant : chaque pièce est choisie pour son authenticité et la qualité de ses finitions.",
     "featuredTitle": "Nos pièces phares",
-    "categoriesTitle": "Explorer par catégorie",
+    "journeyTitle": "Un voyage au cœur de l'artisanat de Fès",
+    "journeyText": "Tannage du cuir, assemblage du zellige pièce par pièce, calligraphie tracée à la plume : ce sont ces gestes hérités de générations d'artisans qui inspirent chacune de nos pièces. Fezbariz est né de cet attachement à un savoir-faire vivant, entre Fès et Paris.",
+    "journeyCta": "Découvrir notre histoire",
+    "reviewsTitle": "Ce qu'en disent nos premières clientes et clients",
+    "reviewsSubtitle": "Des avis authentiques, récoltés lors de nos premières ventes.",
+    "reviewsCta": "Voir tous les avis",
     "storyTitle": "Un savoir-faire transmis de génération en génération",
     "storyText": "Chaque pièce est confectionnée à la main par des artisans marocains selon des techniques ancestrales : broderie, tissage et finitions traditionnelles. En choisissant Fezbariz, vous soutenez directement ces artisans et perpétuez un patrimoine unique.",
     "storyCta": "En savoir plus"
   },
   "shop": {
     "title": "Notre boutique",
+    "hubIntro": "Trois collections, un même souci du détail : découvrez les pièces pour homme, femme et enfant.",
     "allCategories": "Toutes les catégories",
     "empty": "Aucun produit ne correspond à cette sélection pour le moment.",
     "addToCart": "Ajouter au panier",
@@ -66,7 +80,15 @@
     "missionTitle": "Notre mission",
     "missionText": "Nous travaillons directement avec des artisans et coopératives au Maroc pour proposer des pièces authentiques, confectionnées dans le respect des traditions, tout en garantissant une rémunération juste.",
     "qualityTitle": "Qualité et authenticité",
-    "qualityText": "Chaque gandoura et caftan est réalisé avec soin et selon des techniques artisanales transmises depuis des générations."
+    "qualityText": "Chaque gandoura, jellaba, caftan et jabador enfant est réalisé avec soin et selon des techniques artisanales transmises depuis des générations.",
+    "craftTitle": "Des gestes hérités des médinas",
+    "craftText": "À Fès, le tannage du cuir, l'assemblage du zellige et la calligraphie se transmettent encore de maître à apprenti. C'est cette même exigence artisanale que nous recherchons dans chaque broderie, chaque finition de nos gandouras, jellabas, caftans et jabadors."
+  },
+  "reviews": {
+    "title": "Avis clients",
+    "intro": "Nos toutes premières ventes ont eu lieu sur Vinted. Voici, sans filtre, ce que nos premiers clients en ont dit.",
+    "source": "Avis vérifiés sur Vinted",
+    "cta": "Découvrir la boutique"
   },
   "contact": {
     "title": "Contactez-nous",
@@ -81,6 +103,7 @@
     "tagline": "Maison d'élégance entre Fès et Paris.",
     "shop": "Boutique",
     "about": "À propos",
+    "reviews": "Avis",
     "contact": "Contact",
     "rights": "Tous droits réservés."
   }

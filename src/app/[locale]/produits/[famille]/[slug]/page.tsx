@@ -8,19 +8,22 @@ import { formatPrice } from "@/lib/format";
 import { ogLocale, siteUrl, localizedUrls } from "@/lib/site";
 
 export function generateStaticParams() {
-  return getAllProducts().map((product) => ({ slug: product.slug }));
+  return getAllProducts().map((product) => ({
+    famille: product.family,
+    slug: product.slug,
+  }));
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ locale: "fr" | "en"; slug: string }>;
+  params: Promise<{ locale: "fr" | "en"; famille: string; slug: string }>;
 }) {
-  const { locale, slug } = await params;
+  const { locale, famille, slug } = await params;
   const product = getProductBySlug(slug);
-  if (!product) return {};
+  if (!product || product.family !== famille) return {};
 
-  const { languages, canonicalFor } = localizedUrls(`/produits/${slug}`);
+  const { languages, canonicalFor } = localizedUrls(`/produits/${famille}/${slug}`);
 
   return {
     title: product.name[locale],
@@ -49,15 +52,16 @@ export async function generateMetadata({
 export default async function ProductPage({
   params,
 }: {
-  params: Promise<{ locale: "fr" | "en"; slug: string }>;
+  params: Promise<{ locale: "fr" | "en"; famille: string; slug: string }>;
 }) {
-  const { locale, slug } = await params;
+  const { locale, famille, slug } = await params;
   setRequestLocale(locale);
   const product = getProductBySlug(slug);
-  if (!product) notFound();
+  if (!product || product.family !== famille) notFound();
 
   const t = await getTranslations("product");
   const tShop = await getTranslations("shop");
+  const tNav = await getTranslations("nav");
 
   const productJsonLd = {
     "@context": "https://schema.org",
@@ -70,7 +74,7 @@ export default async function ProductPage({
     color: product.color[locale],
     offers: {
       "@type": "Offer",
-      url: localizedUrls(`/produits/${slug}`).canonicalFor(locale),
+      url: localizedUrls(`/produits/${famille}/${slug}`).canonicalFor(locale),
       priceCurrency: product.currency,
       ...(product.price !== null && { price: product.price }),
       availability: product.inStock
@@ -85,9 +89,15 @@ export default async function ProductPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
       />
-      <Link href="/produits" className="text-sm text-charcoal/60 hover:text-terracotta">
-        ← {t("backToShop")}
-      </Link>
+      <p className="text-sm text-charcoal/60">
+        <Link href="/produits" className="hover:text-terracotta">
+          {tShop("title")}
+        </Link>
+        <span className="mx-2">/</span>
+        <Link href={`/produits/${famille}`} className="hover:text-terracotta">
+          {tNav(famille)}
+        </Link>
+      </p>
 
       <div className="mt-6 grid gap-10 md:grid-cols-2">
         <div className="grid grid-cols-2 gap-3">
