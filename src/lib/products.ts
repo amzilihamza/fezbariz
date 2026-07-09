@@ -20,4 +20,4 @@ export function getProductBySlug(slug: string): Product | undefined {
   return products.find((product) => product.slug === slug);
 }
 
-export const categories: Category[] = ["jellabas", "jabadors", "caftans"];
+export const categories: Category[] = ["gandouras", "caftans"];

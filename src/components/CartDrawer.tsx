@@ -55,7 +55,7 @@ export function CartDrawer() {
                         <button
                           className="h-6 w-6 rounded-full border border-sand-dark text-charcoal/70 hover:border-terracotta hover:text-terracotta"
                           onClick={() =>
-                            updateQuantity(item.slug, item.size, item.color, item.quantity - 1)
+                            updateQuantity(item.slug, item.size, item.quantity - 1)
                           }
                         >
                           −
@@ -64,7 +64,7 @@ export function CartDrawer() {
                         <button
                           className="h-6 w-6 rounded-full border border-sand-dark text-charcoal/70 hover:border-terracotta hover:text-terracotta"
                           onClick={() =>
-                            updateQuantity(item.slug, item.size, item.color, item.quantity + 1)
+                            updateQuantity(item.slug, item.size, item.quantity + 1)
                           }
                         >
                           +
@@ -75,7 +75,7 @@ export function CartDrawer() {
                       </span>
                     </div>
                     <button
-                      onClick={() => removeItem(item.slug, item.size, item.color)}
+                      onClick={() => removeItem(item.slug, item.size)}
                       className="mt-1 self-start text-xs text-charcoal/50 underline hover:text-terracotta"
                     >
                       {t("remove")}
@@ -92,7 +92,7 @@ export function CartDrawer() {
             <div className="mb-4 flex items-center justify-between">
               <span className="text-sm font-medium text-charcoal/70">{t("subtotal")}</span>
               <span className="font-display text-lg text-charcoal">
-                {formatPrice(subtotal, items[0]?.currency ?? "MAD")}
+                {formatPrice(subtotal, items[0]?.currency ?? "EUR")}
               </span>
             </div>
             <Link

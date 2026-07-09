@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Fez & Bariz — Vêtements artisanaux marocains",
-    "description": "Jellabas, jabadors et caftans faits main par des artisans marocains. Livraison au Maroc et à l'international."
+    "title": "Fezbariz — Maison d'élégance entre Fès et Paris",
+    "description": "Gandouras et caftans artisanaux marocains, confectionnés à la main. Livraison en France et à l'international."
   },
   "nav": {
     "home": "Accueil",
@@ -9,18 +9,17 @@
     "about": "Notre histoire",
     "contact": "Contact",
     "cart": "Panier",
-    "jellabas": "Jellabas",
-    "jabadors": "Jabadors",
+    "gandouras": "Gandouras",
     "caftans": "Caftans"
   },
   "home": {
     "heroTitle": "L'artisanat marocain, porté avec fierté",
-    "heroSubtitle": "Des jellabas, jabadors et caftans confectionnés à la main par des artisans du Maroc, pour vous et votre famille.",
+    "heroSubtitle": "Des gandouras et caftans confectionnés à la main par des artisans du Maroc, pour vous et votre famille.",
     "heroCta": "Découvrir la boutique",
     "featuredTitle": "Nos pièces phares",
     "categoriesTitle": "Explorer par catégorie",
     "storyTitle": "Un savoir-faire transmis de génération en génération",
-    "storyText": "Chaque pièce est confectionnée à la main par des artisans marocains selon des techniques ancestrales : broderie, tissage et finitions traditionnelles. En choisissant Fez & Bariz, vous soutenez directement ces artisans et perpétuez un patrimoine unique.",
+    "storyText": "Chaque pièce est confectionnée à la main par des artisans marocains selon des techniques ancestrales : broderie, tissage et finitions traditionnelles. En choisissant Fezbariz, vous soutenez directement ces artisans et perpétuez un patrimoine unique.",
     "storyCta": "En savoir plus"
   },
   "shop": {
@@ -31,15 +30,19 @@
     "outOfStock": "Rupture de stock",
     "sizeLabel": "Taille",
     "colorLabel": "Couleur",
-    "priceFrom": "à partir de"
+    "priceFrom": "à partir de",
+    "priceOnRequest": "Prix sur demande"
   },
   "product": {
     "materials": "Matières",
     "care": "Entretien",
     "details": "Détails",
     "quantity": "Quantité",
+    "color": "Couleur",
     "addToCart": "Ajouter au panier",
-    "backToShop": "Retour à la boutique"
+    "backToShop": "Retour à la boutique",
+    "priceOnRequestNote": "Le prix de cette pièce est en cours de confirmation avec l'atelier.",
+    "requestPrice": "Nous contacter pour cette pièce"
   },
   "cart": {
     "title": "Votre panier",
@@ -59,11 +62,11 @@
   },
   "about": {
     "title": "Notre histoire",
-    "intro": "Fez & Bariz est né d'une passion pour l'artisanat textile marocain et de la volonté de le faire rayonner au-delà des frontières.",
+    "intro": "Fezbariz, maison d'élégance entre Fès et Paris, est né d'une passion pour l'artisanat textile marocain et de la volonté de le faire rayonner au-delà des frontières.",
     "missionTitle": "Notre mission",
     "missionText": "Nous travaillons directement avec des artisans et coopératives au Maroc pour proposer des pièces authentiques, confectionnées dans le respect des traditions, tout en garantissant une rémunération juste.",
     "qualityTitle": "Qualité et authenticité",
-    "qualityText": "Chaque jellaba, jabador et caftan est réalisé à partir de matières premières sélectionnées avec soin et selon des techniques artisanales transmises depuis des générations."
+    "qualityText": "Chaque gandoura et caftan est réalisé avec soin et selon des techniques artisanales transmises depuis des générations."
   },
   "contact": {
     "title": "Contactez-nous",
@@ -75,7 +78,7 @@
     "or": "ou contactez-nous directement"
   },
   "footer": {
-    "tagline": "Vêtements artisanaux marocains, faits main.",
+    "tagline": "Maison d'élégance entre Fès et Paris.",
     "shop": "Boutique",
     "about": "À propos",
     "contact": "Contact",

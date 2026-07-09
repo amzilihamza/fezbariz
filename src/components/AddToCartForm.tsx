@@ -2,23 +2,39 @@
 
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { useCart } from "@/lib/cart-context";
 import type { Product } from "@/types/product";
 
 export function AddToCartForm({
   product,
   name,
+  color,
 }: {
   product: Product;
   name: string;
+  color: string;
 }) {
   const t = useTranslations("shop");
   const tProduct = useTranslations("product");
   const { addItem } = useCart();
   const [size, setSize] = useState(product.sizes[0]);
-  const [color, setColor] = useState(product.colors[0]);
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(false);
+
+  if (product.price === null) {
+    return (
+      <div className="space-y-4 rounded-xl border border-sand-dark p-5">
+        <p className="text-sm text-charcoal/70">{tProduct("priceOnRequestNote")}</p>
+        <Link
+          href="/contact"
+          className="block w-full rounded-full bg-terracotta py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-terracotta-dark"
+        >
+          {tProduct("requestPrice")}
+        </Link>
+      </div>
+    );
+  }
 
   return (
     <div className="space-y-6">
@@ -36,25 +52,6 @@ export function AddToCartForm({
               }`}
             >
               {s}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      <div>
-        <p className="mb-2 text-sm font-medium text-charcoal">{t("colorLabel")}</p>
-        <div className="flex flex-wrap gap-2">
-          {product.colors.map((c) => (
-            <button
-              key={c}
-              onClick={() => setColor(c)}
-              className={`rounded-full border px-4 py-1.5 text-sm transition-colors ${
-                color === c
-                  ? "border-terracotta bg-terracotta text-white"
-                  : "border-sand-dark text-charcoal/70 hover:border-terracotta"
-              }`}
-            >
-              {c}
             </button>
           ))}
         </div>
@@ -82,7 +79,7 @@ export function AddToCartForm({
       <button
         disabled={!product.inStock}
         onClick={() => {
-          addItem(product, name, size, color, quantity);
+          addItem({ ...product, price: product.price as number }, name, color, size, quantity);
           setAdded(true);
           setTimeout(() => setAdded(false), 2000);
         }}

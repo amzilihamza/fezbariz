@@ -50,13 +50,13 @@ export async function generateMetadata({
       description: t("description"),
       url: canonicalFor(locale),
       locale: ogLocale(locale),
-      images: ["/images/placeholders/hero.svg"],
+      images: ["/images/brand/zellige.webp"],
     },
     twitter: {
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: ["/images/placeholders/hero.svg"],
+      images: ["/images/brand/zellige.webp"],
     },
   };
 }
@@ -80,8 +80,8 @@ export default async function LocaleLayout({
     "@type": "ClothingStore",
     name: siteName,
     url: siteUrl,
-    logo: `${siteUrl}/images/placeholders/hero.svg`,
-    areaServed: "MA",
+    logo: `${siteUrl}/images/brand/logo.jpg`,
+    areaServed: ["FR", "MA"],
     sameAs: [],
   };
 

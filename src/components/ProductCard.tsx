@@ -29,7 +29,11 @@ export function ProductCard({ product }: { product: Product }) {
       </div>
       <div className="mt-3">
         <h3 className="text-sm font-medium text-charcoal">{product.name[locale]}</h3>
-        <p className="mt-1 text-sm text-charcoal/70">{formatPrice(product.price, product.currency)}</p>
+        <p className="mt-1 text-sm text-charcoal/70">
+          {product.price === null
+            ? t("priceOnRequest")
+            : formatPrice(product.price, product.currency)}
+        </p>
       </div>
     </Link>
   );

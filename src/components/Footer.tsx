@@ -9,7 +9,7 @@ export function Footer() {
     <footer className="border-t border-sand-dark bg-sand">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-12 sm:px-6 md:flex-row md:justify-between">
         <div className="max-w-sm">
-          <p className="font-display text-xl text-charcoal">Fez &amp; Bariz</p>
+          <p className="font-display text-xl text-charcoal">Fezbariz</p>
           <p className="mt-2 text-sm text-charcoal/70">{t("tagline")}</p>
         </div>
 
@@ -42,7 +42,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-sand-dark px-4 py-4 text-center text-xs text-charcoal/60 sm:px-6">
-        © {year} Fez &amp; Bariz — {t("rights")}
+        © {year} Fezbariz — {t("rights")}
       </div>
     </footer>
   );

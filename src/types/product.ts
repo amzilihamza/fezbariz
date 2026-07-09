@@ -1,4 +1,4 @@
-export type Category = "jellabas" | "jabadors" | "caftans";
+export type Category = "gandouras" | "caftans";
 
 export type LocalizedText = {
   fr: string;
@@ -11,13 +11,14 @@ export type Product = {
   name: LocalizedText;
   shortDescription: LocalizedText;
   description: LocalizedText;
+  color: LocalizedText;
   materials: LocalizedText;
   care: LocalizedText;
-  price: number;
-  currency: "MAD" | "EUR" | "USD";
+  /** null while the price is still being confirmed with the workshop. */
+  price: number | null;
+  currency: "EUR";
   images: string[];
   sizes: string[];
-  colors: string[];
   inStock: boolean;
   featured?: boolean;
 };

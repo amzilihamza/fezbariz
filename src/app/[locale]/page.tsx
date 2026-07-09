@@ -6,9 +6,8 @@ import { ProductCard } from "@/components/ProductCard";
 import { getFeaturedProducts, categories } from "@/lib/products";
 
 const categoryImages: Record<string, string> = {
-  jellabas: "/images/placeholders/jellaba-homme-laine-1.svg",
-  jabadors: "/images/placeholders/jabador-classique-1.svg",
-  caftans: "/images/placeholders/caftan-soiree-brode-1.svg",
+  gandouras: "/images/products/gandoura-bordeaux-porte.jpg",
+  caftans: "/images/products/caftan-bleu-roi-porte.jpg",
 };
 
 export default async function HomePage({
@@ -26,12 +25,13 @@ export default async function HomePage({
     <div>
       <section className="relative flex min-h-[70vh] items-end overflow-hidden">
         <Image
-          src="/images/placeholders/hero.svg"
+          src="/images/products/gandoura-vert-porte.jpg"
           alt=""
           fill
           priority
           className="object-cover"
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-4 pb-16 pt-32 sm:px-6">
           <h1 className="max-w-xl font-display text-4xl text-white sm:text-5xl">
             {t("heroTitle")}
@@ -48,7 +48,7 @@ export default async function HomePage({
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <h2 className="font-display text-2xl text-charcoal">{t("categoriesTitle")}</h2>
-        <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
+        <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {categories.map((category) => (
             <Link
               key={category}
@@ -84,7 +84,7 @@ export default async function HomePage({
         <div className="mx-auto grid max-w-6xl gap-8 px-4 py-16 sm:px-6 md:grid-cols-2 md:items-center">
           <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
             <Image
-              src="/images/placeholders/caftan-takchita-1.svg"
+              src="/images/brand/zellige.webp"
               alt=""
               fill
               className="object-cover"

@@ -1,204 +1,199 @@
 [
   {
-    "slug": "jellaba-homme-laine",
-    "category": "jellabas",
-    "name": { "fr": "Jellaba Homme en Laine", "en": "Men's Wool Jellaba" },
+    "slug": "gandoura-blanc",
+    "category": "gandouras",
+    "name": { "fr": "Gandoura Blanc Ivoire", "en": "Ivory White Gandoura" },
+    "color": { "fr": "Blanc ivoire", "en": "Ivory white" },
     "shortDescription": {
-      "fr": "Jellaba traditionnelle en laine tissée à la main, idéale pour l'hiver.",
-      "en": "Traditional jellaba in hand-woven wool, perfect for winter."
+      "fr": "Gandoura homme manches courtes, col brodé ton sur ton.",
+      "en": "Men's short-sleeve gandoura with tone-on-tone embroidered collar."
     },
     "description": {
-      "fr": "Cette jellaba pour homme est confectionnée à partir de laine tissée à la main par des artisans de la région du Moyen Atlas. Coupe ample et confortable, capuche pointue traditionnelle et boutons brandebourgs cousus main.",
-      "en": "This men's jellaba is made from hand-woven wool by artisans from the Middle Atlas region. Loose, comfortable cut, traditional pointed hood and hand-sewn brandebourg buttons."
+      "fr": "Gandoura homme à manches courtes, coupe ample et droite. Col en V brodé ton sur ton avec finitions boutonnées, poignets et poches assortis.",
+      "en": "Men's short-sleeve gandoura, loose straight cut. Tone-on-tone embroidered V-neck collar with button trim, matching cuffs and pockets."
     },
-    "materials": { "fr": "100% laine", "en": "100% wool" },
-    "care": {
-      "fr": "Nettoyage à sec recommandé.",
-      "en": "Dry clean recommended."
-    },
-    "price": 890,
-    "currency": "MAD",
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": null,
+    "currency": "EUR",
     "images": [
-      "/images/placeholders/jellaba-homme-laine-1.svg",
-      "/images/placeholders/jellaba-homme-laine-2.svg"
+      "/images/products/gandoura-blanc-porte.jpg",
+      "/images/products/gandoura-blanc-fond.jpg",
+      "/images/products/gandoura-blanc-detail.jpg"
     ],
     "sizes": ["S", "M", "L", "XL", "XXL"],
-    "colors": ["Beige", "Gris", "Marron"],
     "inStock": true,
     "featured": true
   },
   {
-    "slug": "jellaba-femme-brodee",
-    "category": "jellabas",
-    "name": { "fr": "Jellaba Femme Brodée", "en": "Women's Embroidered Jellaba" },
+    "slug": "gandoura-bordeaux",
+    "category": "gandouras",
+    "name": { "fr": "Gandoura Bordeaux", "en": "Burgundy Gandoura" },
+    "color": { "fr": "Bordeaux", "en": "Burgundy" },
     "shortDescription": {
-      "fr": "Jellaba légère avec broderies main sur le col et les manches.",
-      "en": "Lightweight jellaba with hand embroidery on the collar and sleeves."
+      "fr": "Gandoura homme manches courtes, col brodé ton sur ton.",
+      "en": "Men's short-sleeve gandoura with tone-on-tone embroidered collar."
     },
     "description": {
-      "fr": "Une jellaba féminine en coton léger, ornée de broderies traditionnelles réalisées à la main. Parfaite pour les journées douces et les occasions spéciales.",
-      "en": "A feminine jellaba in lightweight cotton, adorned with traditional hand embroidery. Perfect for mild days and special occasions."
+      "fr": "Gandoura homme à manches courtes, coupe ample et droite. Col en V brodé ton sur ton avec finitions boutonnées, poignets et poches assortis.",
+      "en": "Men's short-sleeve gandoura, loose straight cut. Tone-on-tone embroidered V-neck collar with button trim, matching cuffs and pockets."
     },
-    "materials": { "fr": "100% coton", "en": "100% cotton" },
-    "care": {
-      "fr": "Lavage à la main, à l'eau froide.",
-      "en": "Hand wash in cold water."
-    },
-    "price": 750,
-    "currency": "MAD",
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": null,
+    "currency": "EUR",
     "images": [
-      "/images/placeholders/jellaba-femme-brodee-1.svg",
-      "/images/placeholders/jellaba-femme-brodee-2.svg"
-    ],
-    "sizes": ["XS", "S", "M", "L", "XL"],
-    "colors": ["Blanc", "Rose poudré", "Vert sauge"],
-    "inStock": true,
-    "featured": true
-  },
-  {
-    "slug": "jellaba-enfant",
-    "category": "jellabas",
-    "name": { "fr": "Jellaba Enfant", "en": "Children's Jellaba" },
-    "shortDescription": {
-      "fr": "Jellaba confortable pour enfant, coupe simple et douce.",
-      "en": "Comfortable children's jellaba, simple and soft cut."
-    },
-    "description": {
-      "fr": "Une jellaba pensée pour les enfants, en coton doux et résistant, idéale pour les fêtes en famille et le quotidien.",
-      "en": "A jellaba designed for children, in soft and durable cotton, perfect for family celebrations and everyday wear."
-    },
-    "materials": { "fr": "100% coton", "en": "100% cotton" },
-    "care": { "fr": "Lavable en machine à 30°C.", "en": "Machine washable at 30°C." },
-    "price": 420,
-    "currency": "MAD",
-    "images": [
-      "/images/placeholders/jellaba-enfant-1.svg",
-      "/images/placeholders/jellaba-enfant-2.svg"
-    ],
-    "sizes": ["4 ans", "6 ans", "8 ans", "10 ans", "12 ans"],
-    "colors": ["Bleu ciel", "Beige"],
-    "inStock": true
-  },
-  {
-    "slug": "jabador-classique",
-    "category": "jabadors",
-    "name": { "fr": "Jabador Classique", "en": "Classic Jabador" },
-    "shortDescription": {
-      "fr": "Ensemble jabador deux pièces, coupe intemporelle.",
-      "en": "Two-piece jabador set, timeless cut."
-    },
-    "description": {
-      "fr": "Ce jabador se compose d'une tunique et d'un pantalon assorti, confectionnés dans un tissu fluide. Une pièce incontournable pour les grandes occasions.",
-      "en": "This jabador consists of a tunic and matching trousers, made from flowing fabric. An essential piece for special occasions."
-    },
-    "materials": { "fr": "Coton et viscose", "en": "Cotton and viscose blend" },
-    "care": { "fr": "Nettoyage à sec recommandé.", "en": "Dry clean recommended." },
-    "price": 680,
-    "currency": "MAD",
-    "images": [
-      "/images/placeholders/jabador-classique-1.svg",
-      "/images/placeholders/jabador-classique-2.svg"
+      "/images/products/gandoura-bordeaux-porte.jpg",
+      "/images/products/gandoura-bordeaux-fond.jpg",
+      "/images/products/gandoura-bordeaux-detail.jpg"
     ],
     "sizes": ["S", "M", "L", "XL", "XXL"],
-    "colors": ["Blanc cassé", "Gris perle"],
     "inStock": true,
     "featured": true
   },
   {
-    "slug": "jabador-lin",
-    "category": "jabadors",
-    "name": { "fr": "Jabador en Lin", "en": "Linen Jabador" },
+    "slug": "gandoura-vert",
+    "category": "gandouras",
+    "name": { "fr": "Gandoura Vert Sapin", "en": "Forest Green Gandoura" },
+    "color": { "fr": "Vert sapin", "en": "Forest green" },
     "shortDescription": {
-      "fr": "Jabador léger en lin, idéal pour l'été.",
-      "en": "Lightweight linen jabador, perfect for summer."
+      "fr": "Gandoura homme manches courtes, col brodé contrasté noir.",
+      "en": "Men's short-sleeve gandoura with contrasting black embroidered collar."
     },
     "description": {
-      "fr": "Confectionné en lin naturel, ce jabador offre une grande respirabilité tout en conservant une allure élégante et sobre.",
-      "en": "Made from natural linen, this jabador offers great breathability while maintaining an elegant, understated look."
+      "fr": "Gandoura homme à manches courtes, coupe ample et droite. Col en V brodé en contraste noir avec finitions boutonnées, poignets et poches assortis.",
+      "en": "Men's short-sleeve gandoura, loose straight cut. Contrasting black embroidered V-neck collar with button trim, matching cuffs and pockets."
     },
-    "materials": { "fr": "100% lin", "en": "100% linen" },
-    "care": { "fr": "Lavage à la main.", "en": "Hand wash only." },
-    "price": 590,
-    "currency": "MAD",
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": null,
+    "currency": "EUR",
     "images": [
-      "/images/placeholders/jabador-lin-1.svg",
-      "/images/placeholders/jabador-lin-2.svg"
-    ],
-    "sizes": ["S", "M", "L", "XL"],
-    "colors": ["Écru", "Sable"],
-    "inStock": false
-  },
-  {
-    "slug": "caftan-soiree-brode",
-    "category": "caftans",
-    "name": { "fr": "Caftan de Soirée Brodé", "en": "Embroidered Evening Caftan" },
-    "shortDescription": {
-      "fr": "Caftan raffiné avec broderies dorées, pour les grandes occasions.",
-      "en": "Refined caftan with gold embroidery, for special occasions."
-    },
-    "description": {
-      "fr": "Ce caftan de soirée est orné de broderies dorées réalisées à la main et rehaussé d'une ceinture assortie. Une pièce d'exception pour les mariages et cérémonies.",
-      "en": "This evening caftan is adorned with hand-made gold embroidery and enhanced with a matching belt. An exceptional piece for weddings and ceremonies."
-    },
-    "materials": { "fr": "Satin et fils dorés", "en": "Satin with gold thread" },
-    "care": { "fr": "Nettoyage à sec uniquement.", "en": "Dry clean only." },
-    "price": 1450,
-    "currency": "MAD",
-    "images": [
-      "/images/placeholders/caftan-soiree-brode-1.svg",
-      "/images/placeholders/caftan-soiree-brode-2.svg"
-    ],
-    "sizes": ["S", "M", "L", "XL"],
-    "colors": ["Bordeaux", "Émeraude", "Noir"],
-    "inStock": true,
-    "featured": true
-  },
-  {
-    "slug": "caftan-takchita",
-    "category": "caftans",
-    "name": { "fr": "Takchita Deux Pièces", "en": "Two-Piece Takchita" },
-    "shortDescription": {
-      "fr": "Takchita traditionnelle composée d'une robe intérieure et d'un caftan extérieur.",
-      "en": "Traditional takchita made of an inner dress and outer caftan."
-    },
-    "description": {
-      "fr": "La takchita se compose de deux pièces superposées, maintenues par une ceinture brodée (mdamma). Un habit de cérémonie emblématique du Maroc.",
-      "en": "The takchita consists of two layered pieces, held by an embroidered belt (mdamma). An iconic Moroccan ceremonial garment."
-    },
-    "materials": { "fr": "Soie et broderies sfifa", "en": "Silk with sfifa embroidery" },
-    "care": { "fr": "Nettoyage à sec uniquement.", "en": "Dry clean only." },
-    "price": 2200,
-    "currency": "MAD",
-    "images": [
-      "/images/placeholders/caftan-takchita-1.svg",
-      "/images/placeholders/caftan-takchita-2.svg"
+      "/images/products/gandoura-vert-porte.jpg",
+      "/images/products/gandoura-vert-fond.jpg",
+      "/images/products/gandoura-vert-detail.jpg"
     ],
     "sizes": ["S", "M", "L", "XL", "XXL"],
-    "colors": ["Ivoire", "Rose poudré", "Bleu nuit"],
-    "inStock": true
+    "inStock": true,
+    "featured": false
   },
   {
-    "slug": "caftan-simple",
-    "category": "caftans",
-    "name": { "fr": "Caftan Simple du Quotidien", "en": "Everyday Simple Caftan" },
+    "slug": "gandoura-noir",
+    "category": "gandouras",
+    "name": { "fr": "Gandoura Noir", "en": "Black Gandoura" },
+    "color": { "fr": "Noir", "en": "Black" },
     "shortDescription": {
-      "fr": "Caftan sobre et confortable pour un usage quotidien.",
-      "en": "Understated, comfortable caftan for everyday wear."
+      "fr": "Gandoura homme manches courtes, col brodé ton sur ton.",
+      "en": "Men's short-sleeve gandoura with tone-on-tone embroidered collar."
     },
     "description": {
-      "fr": "Un caftan aux lignes épurées, sans fioritures, parfait pour un usage quotidien à la maison ou en visite.",
-      "en": "A caftan with clean lines and no frills, perfect for everyday wear at home or visiting."
+      "fr": "Gandoura homme à manches courtes, coupe ample et droite. Col en V brodé ton sur ton avec finitions boutonnées, poignets et poches assortis.",
+      "en": "Men's short-sleeve gandoura, loose straight cut. Tone-on-tone embroidered V-neck collar with button trim, matching cuffs and pockets."
     },
-    "materials": { "fr": "Coton mélangé", "en": "Cotton blend" },
-    "care": { "fr": "Lavable en machine à 30°C.", "en": "Machine washable at 30°C." },
-    "price": 480,
-    "currency": "MAD",
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": null,
+    "currency": "EUR",
+    "images": ["/images/products/gandoura-noir-fond.jpg"],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "slug": "caftan-bleu-roi",
+    "category": "caftans",
+    "name": { "fr": "Caftan Bleu Roi Brodé", "en": "Embroidered Royal Blue Caftan" },
+    "color": { "fr": "Bleu roi", "en": "Royal blue" },
+    "shortDescription": {
+      "fr": "Caftan femme manches longues, broderies florales dorées et ceinture assortie.",
+      "en": "Women's long-sleeve caftan with gold floral embroidery and matching belt."
+    },
+    "description": {
+      "fr": "Caftan femme à manches longues évasées, encolure en V et fente devant. Broderies florales dorées sur l'empiècement et la bande centrale, ceinture large assortie à motifs.",
+      "en": "Women's caftan with long bell sleeves, V-neckline and front slit. Gold floral embroidery on the yoke and central panel, wide matching patterned belt."
+    },
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": null,
+    "currency": "EUR",
     "images": [
-      "/images/placeholders/caftan-simple-1.svg",
-      "/images/placeholders/caftan-simple-2.svg"
+      "/images/products/caftan-bleu-roi-porte.jpg",
+      "/images/products/caftan-bleu-roi-produit.jpg"
     ],
-    "sizes": ["S", "M", "L", "XL"],
-    "colors": ["Terracotta", "Vert olive"],
-    "inStock": true
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "slug": "caftan-orange",
+    "category": "caftans",
+    "name": { "fr": "Caftan Orange Brodé", "en": "Embroidered Orange Caftan" },
+    "color": { "fr": "Orange", "en": "Orange" },
+    "shortDescription": {
+      "fr": "Caftan femme manches longues, broderies pailletées et boutons pompons.",
+      "en": "Women's long-sleeve caftan with sequin embroidery and pompom buttons."
+    },
+    "description": {
+      "fr": "Caftan femme à manches longues, encolure en V brodée et pailletée, fermeture à boutons pompons sur toute la longueur, ceinture assortie.",
+      "en": "Women's long-sleeve caftan with an embroidered, sequined V-neckline, full-length pompom button closure and matching belt."
+    },
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": null,
+    "currency": "EUR",
+    "images": [
+      "/images/products/caftan-orange-1.jpg",
+      "/images/products/caftan-orange-2.jpg"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "slug": "caftan-rose",
+    "category": "caftans",
+    "name": { "fr": "Caftan Rose Poudré Brodé", "en": "Embroidered Powder Pink Caftan" },
+    "color": { "fr": "Rose poudré", "en": "Powder pink" },
+    "shortDescription": {
+      "fr": "Caftan femme manches longues, broderies ton sur ton et boutons pompons.",
+      "en": "Women's long-sleeve caftan with tone-on-tone embroidery and pompom buttons."
+    },
+    "description": {
+      "fr": "Caftan femme à manches longues, encolure en V brodée ton sur ton, fermeture à boutons pompons sur toute la longueur, ceinture assortie.",
+      "en": "Women's long-sleeve caftan with a tone-on-tone embroidered V-neckline, full-length pompom button closure and matching belt."
+    },
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": null,
+    "currency": "EUR",
+    "images": [
+      "/images/products/caftan-rose-1.jpg",
+      "/images/products/caftan-rose-2.jpg"
+    ],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "slug": "caftan-turquoise",
+    "category": "caftans",
+    "name": { "fr": "Caftan Turquoise Brodé", "en": "Embroidered Turquoise Caftan" },
+    "color": { "fr": "Turquoise", "en": "Turquoise" },
+    "shortDescription": {
+      "fr": "Caftan femme manches longues, broderies ton sur ton et ceinture assortie.",
+      "en": "Women's long-sleeve caftan with tone-on-tone embroidery and matching belt."
+    },
+    "description": {
+      "fr": "Caftan femme à manches longues évasées, encolure en V brodée ton sur ton et fente devant, ceinture large assortie.",
+      "en": "Women's caftan with long bell sleeves, tone-on-tone embroidered V-neckline, front slit and wide matching belt."
+    },
+    "materials": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "care": { "fr": "À confirmer avec l'atelier", "en": "To be confirmed with the workshop" },
+    "price": null,
+    "currency": "EUR",
+    "images": ["/images/products/caftan-turquoise-1.jpg"],
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "inStock": true,
+    "featured": true
   }
 ]

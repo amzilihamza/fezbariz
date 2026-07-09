@@ -32,7 +32,7 @@ export default async function AboutPage({
       <p className="mt-6 text-lg text-charcoal/80">{t("intro")}</p>
 
       <div className="relative mt-10 aspect-[16/9] overflow-hidden rounded-xl">
-        <Image src="/images/placeholders/hero.svg" alt="" fill className="object-cover" />
+        <Image src="/images/brand/boutique-ambiance.jpg" alt="" fill className="object-cover" />
       </div>
 
       <div className="mt-12 grid gap-10 sm:grid-cols-2">

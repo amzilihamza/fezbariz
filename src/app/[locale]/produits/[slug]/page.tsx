@@ -57,6 +57,7 @@ export default async function ProductPage({
   if (!product) notFound();
 
   const t = await getTranslations("product");
+  const tShop = await getTranslations("shop");
 
   const productJsonLd = {
     "@context": "https://schema.org",
@@ -66,12 +67,12 @@ export default async function ProductPage({
     image: product.images.map((image) => `${siteUrl}${image}`),
     sku: product.slug,
     category: product.category,
-    material: product.materials[locale],
+    color: product.color[locale],
     offers: {
       "@type": "Offer",
       url: localizedUrls(`/produits/${slug}`).canonicalFor(locale),
       priceCurrency: product.currency,
-      price: product.price,
+      ...(product.price !== null && { price: product.price }),
       availability: product.inStock
         ? "https://schema.org/InStock"
         : "https://schema.org/OutOfStock",
@@ -111,11 +112,17 @@ export default async function ProductPage({
         <div>
           <h1 className="font-display text-3xl text-charcoal">{product.name[locale]}</h1>
           <p className="mt-2 text-xl text-charcoal/80">
-            {formatPrice(product.price, product.currency)}
+            {product.price === null
+              ? tShop("priceOnRequest")
+              : formatPrice(product.price, product.currency)}
           </p>
           <p className="mt-4 text-charcoal/80">{product.description[locale]}</p>
 
           <dl className="mt-6 space-y-2 text-sm text-charcoal/70">
+            <div className="flex gap-2">
+              <dt className="font-medium text-charcoal">{t("color")}:</dt>
+              <dd>{product.color[locale]}</dd>
+            </div>
             <div className="flex gap-2">
               <dt className="font-medium text-charcoal">{t("materials")}:</dt>
               <dd>{product.materials[locale]}</dd>
@@ -127,7 +134,7 @@ export default async function ProductPage({
           </dl>
 
           <div className="mt-8">
-            <AddToCartForm product={product} name={product.name[locale]} />
+            <AddToCartForm product={product} name={product.name[locale]} color={product.color[locale]} />
           </div>
         </div>
       </div>

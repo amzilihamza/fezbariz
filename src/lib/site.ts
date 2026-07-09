@@ -5,7 +5,7 @@ export const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL ?? "https://fezbariz.ma
   ""
 );
 
-export const siteName = "Fez & Bariz";
+export const siteName = "Fezbariz";
 
 const ogLocales: Record<string, string> = {
   fr: "fr_FR",

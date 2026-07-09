@@ -30,7 +30,7 @@ export async function POST(request: Request) {
   const lineItems: Stripe.Checkout.SessionCreateParams.LineItem[] = [];
   for (const item of items) {
     const product = getProductBySlug(item.slug);
-    if (!product || !product.inStock) {
+    if (!product || !product.inStock || product.price === null) {
       return NextResponse.json(
         { error: `Product unavailable: ${item.slug}` },
         { status: 400 }
@@ -44,7 +44,7 @@ export async function POST(request: Request) {
         unit_amount: Math.round(product.price * 100),
         product_data: {
           name: product.name[locale],
-          description: `${item.size} · ${item.color}`,
+          description: `${item.size} · ${product.color[locale]}`,
         },
       },
     });

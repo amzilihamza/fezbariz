@@ -1,7 +1,7 @@
-export function formatPrice(amount: number, currency: string, locale = "fr-MA") {
+export function formatPrice(amount: number, currency: string, locale = "fr-FR") {
   return new Intl.NumberFormat(locale, {
     style: "currency",
     currency,
-    maximumFractionDigits: 0,
+    maximumFractionDigits: 2,
   }).format(amount);
 }

@@ -75,7 +75,7 @@ export default function CartPage() {
                       <button
                         className="h-7 w-7 rounded-full border border-sand-dark text-charcoal/70 hover:border-terracotta hover:text-terracotta"
                         onClick={() =>
-                          updateQuantity(item.slug, item.size, item.color, item.quantity - 1)
+                          updateQuantity(item.slug, item.size, item.quantity - 1)
                         }
                       >
                         −
@@ -84,7 +84,7 @@ export default function CartPage() {
                       <button
                         className="h-7 w-7 rounded-full border border-sand-dark text-charcoal/70 hover:border-terracotta hover:text-terracotta"
                         onClick={() =>
-                          updateQuantity(item.slug, item.size, item.color, item.quantity + 1)
+                          updateQuantity(item.slug, item.size, item.quantity + 1)
                         }
                       >
                         +
@@ -95,7 +95,7 @@ export default function CartPage() {
                     </span>
                   </div>
                   <button
-                    onClick={() => removeItem(item.slug, item.size, item.color)}
+                    onClick={() => removeItem(item.slug, item.size)}
                     className="mt-1 self-start text-xs text-charcoal/50 underline hover:text-terracotta"
                   >
                     {t("remove")}
@@ -109,7 +109,7 @@ export default function CartPage() {
             <div className="flex items-center justify-between text-charcoal">
               <span className="font-medium">{t("subtotal")}</span>
               <span className="font-display text-xl">
-                {formatPrice(subtotal, items[0]?.currency ?? "MAD")}
+                {formatPrice(subtotal, items[0]?.currency ?? "EUR")}
               </span>
             </div>
             {error && <p className="mt-3 text-sm text-terracotta">{error}</p>}

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Fez & Bariz — Moroccan Handmade Clothing",
-    "description": "Jellabas, jabadors and caftans handmade by Moroccan artisans. Shipping in Morocco and worldwide."
+    "title": "Fezbariz — The House of Elegance Between Fez and Paris",
+    "description": "Handmade Moroccan artisanal gandouras and caftans. Shipping in France and worldwide."
   },
   "nav": {
     "home": "Home",
@@ -9,18 +9,17 @@
     "about": "Our story",
     "contact": "Contact",
     "cart": "Cart",
-    "jellabas": "Jellabas",
-    "jabadors": "Jabadors",
+    "gandouras": "Gandouras",
     "caftans": "Caftans"
   },
   "home": {
     "heroTitle": "Moroccan craftsmanship, worn with pride",
-    "heroSubtitle": "Jellabas, jabadors and caftans handmade by Moroccan artisans, for you and your family.",
+    "heroSubtitle": "Gandouras and caftans handmade by Moroccan artisans, for you and your family.",
     "heroCta": "Shop the collection",
     "featuredTitle": "Featured pieces",
     "categoriesTitle": "Shop by category",
     "storyTitle": "A craft passed down through generations",
-    "storyText": "Every piece is handmade by Moroccan artisans using traditional techniques: embroidery, weaving and time-honoured finishing. By choosing Fez & Bariz, you directly support these artisans and help keep a unique heritage alive.",
+    "storyText": "Every piece is handmade by Moroccan artisans using traditional techniques: embroidery, weaving and time-honoured finishing. By choosing Fezbariz, you directly support these artisans and help keep a unique heritage alive.",
     "storyCta": "Learn more"
   },
   "shop": {
@@ -31,15 +30,19 @@
     "outOfStock": "Out of stock",
     "sizeLabel": "Size",
     "colorLabel": "Color",
-    "priceFrom": "from"
+    "priceFrom": "from",
+    "priceOnRequest": "Price on request"
   },
   "product": {
     "materials": "Materials",
     "care": "Care instructions",
     "details": "Details",
     "quantity": "Quantity",
+    "color": "Color",
     "addToCart": "Add to cart",
-    "backToShop": "Back to shop"
+    "backToShop": "Back to shop",
+    "priceOnRequestNote": "The price of this piece is being confirmed with the workshop.",
+    "requestPrice": "Contact us about this piece"
   },
   "cart": {
     "title": "Your cart",
@@ -59,11 +62,11 @@
   },
   "about": {
     "title": "Our story",
-    "intro": "Fez & Bariz was born from a passion for Moroccan textile craftsmanship and a desire to share it beyond borders.",
+    "intro": "Fezbariz, the house of elegance between Fez and Paris, was born from a passion for Moroccan textile craftsmanship and a desire to share it beyond borders.",
     "missionTitle": "Our mission",
     "missionText": "We work directly with artisans and cooperatives in Morocco to offer authentic pieces, handmade following traditional methods, while ensuring fair compensation.",
     "qualityTitle": "Quality and authenticity",
-    "qualityText": "Every jellaba, jabador and caftan is made from carefully selected materials using artisanal techniques passed down through generations."
+    "qualityText": "Every gandoura and caftan is made with care using artisanal techniques passed down through generations."
   },
   "contact": {
     "title": "Get in touch",
@@ -75,7 +78,7 @@
     "or": "or reach us directly"
   },
   "footer": {
-    "tagline": "Handmade Moroccan artisanal clothing.",
+    "tagline": "The house of elegance between Fez and Paris.",
     "shop": "Shop",
     "about": "About",
     "contact": "Contact",
